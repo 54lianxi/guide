@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/ground.css">
+    <title>顶面</title>
+</head>
+<body>
+<div id="body">
+    <div class="banner">
+        <img src="img/top.png" alt="">
+    </div>
+    <div class="con">
+            <div class="row tab">
+                <div :class="index==0?'active':''" class="tab_one" @click="index=0">乳胶漆顶面</div>
+                <div :class="index==1?'active':''"  class="tab_one" @click="index=1">乳胶漆石膏板吊顶</div>
+                <div :class="index==2?'active':''"  class="tab_one" @click="index=2">铝扣板吊顶</div>
+            </div>
+            <div class="">
+                <div  v-if="index==0">
+                        <div class="pro_title row center title">
+                                <div class="circle"></div>
+                                <div>乳胶漆顶面示意图 </div>
+                                <div class="circle"></div>
+                        </div>
+                        <img src="img/top1.png" alt="" class="wood_img">
+                </div>
+                <div v-if="index==1">
+                        <div class="pro_title row center title">
+                                <div class="circle"></div>
+                                <div>乳胶漆石膏板吊顶示意图 </div>
+                                <div class="circle"></div>
+                        </div>
+                        <img src="img/top6.png" alt="" class="wood_img">
+                </div>
+                <div v-if="index==2">
+                        <div class="pro_title row center title">
+                                <div class="circle"></div>
+                                <div>铝扣板吊顶示意图</div>
+                                <div class="circle"></div>
+                        </div>
+                        <img src="img/top7.png" alt="" class="wood_img">
+                </div>
+            </div>
+        </div>
+        <div class="divide"></div>
+        <div class="con">
+                <div class="pro_title row center title">
+                        <div class="circle"></div>
+                        <div>吊顶形式</div>
+                        <div class="circle"></div>
+                </div>
+                <img src="img/top2.png" alt="">
+                <div class="pro_title row center title">
+                        <div class="circle"></div>
+                        <div>龙骨类型</div>
+                        <div class="circle"></div>
+                </div>
+                <img src="img/top3.png" alt="">
+                <div class="l28">
+                    <div>木龙骨要求：木龙骨按要求应该刷防火涂料（大部分家装都没做，这也是建议采用轻钢龙骨的原因之一），防腐处理（大部分也没做）。主龙骨最小30*40，次龙骨最小25*30。</div>
+                    <div>轻钢龙骨要求：规格38、45、50、60 （壁厚1.0或1.2mm）为国标生产，根据上人与否主、副龙骨搭配使用，一般没有问题。</div>
+                    <div>纸面石膏板规格：9.5mm 、12mm 、15mm,次龙骨间距不大于450mm可以用9.5mm，根据间距增加板厚。 纸面石膏板品牌：</div>
+                </div>
+                <div class="pro_title row center title">
+                        <div class="circle"></div>
+                        <div>纸面石膏板品牌</div>
+                        <div class="circle"></div>
+                </div>
+                <div class="l28">圣戈班、拉法基、可耐福、龙牌、泰山、兔宝宝、千年舟 </div>
+                <div class="pro_title row center title">
+                        <div class="circle"></div>
+                        <div>空点风口</div>
+                        <div class="circle"></div>
+                </div>
+                <div class="l28 bot20"><span class="bold">类型：<span>铝合金风口、木质风口、ABS风口、不锈钢风口，PVC出风口 </div>
+                <div class="l28">
+                    <div>铝合金出风口经久耐用，但夏季容易结露形成冷凝水滴；</div>
+                    <div>ABS（塑钢）出风口，各方面比较均衡，较理想，价格较高</div>
+                    <div>木质出风口美观大方，但容易腐蚀发霉，变形开裂。</div>
+                    <div>PVC（塑料）出风口不耐久，容易变形变色老化 不锈钢出风口同铝合金，价格不如铝合金，家用较少。 </div>
+                </div>
+                <img src="img/top4.png" alt="">
+                <div class="pro_title row center title">
+                        <div class="circle"></div>
+                        <div>铝合板选购</div>
+                        <div class="circle"></div>
+                </div>
+                <div class="l28">铝扣板厚度以0.6~0.8居多，主要看平整度，无需太厚，但如果选择大尺寸的铝扣板则应增加厚度至1.0~1.4mm。注意有再生铝替代原生铝，再生铝就是废旧铝回收再利用，容易折断，可以以此判别。 </div>
+                <img src="img/top5.png" alt="">
+                <div class="bot20 bold">暖风机还是浴霸</div>
+                <div class="line28 bot20">
+                    <div> 不管是传热的有效性还是光污染，暖风机都比浴霸更有优势，暖风机气流下行快速换气，升温比浴霸快且室温均匀，不像浴霸上热下冷；且浴霸的强光对人的视力造成不利影响，尤其是给婴幼儿洗浴时，小孩子好奇心盯住强光，造成儿童视力下降。  </div>
+                    <div>当然现在也有光暖和风暖两用的，业主可以根据自己的需求选购，光暖（浴霸）比较便宜。</div>
+                </div>
+        </div>
+</div>    
+</body>
+</html>
+<script src="http://www.necta.online/js/vue.min.js"></script>
+<script src="js/problem.js"></script>
+<script>
+new Vue({
+    el:'#body',
+    data:{
+        index:0,
+       water:true
+    },
+    
+})
+</script>

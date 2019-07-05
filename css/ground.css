@@ -1,0 +1,54 @@
+
+
+.tab{
+    line-height:28px;
+    font-size:16px;
+    margin-bottom:24px;
+}
+.con{
+    padding:20px;
+}
+.tab_one{
+    margin-right:20px;
+   
+}
+.tab_one:last-child{
+    margin-right:0;
+}
+.tab_one::after{
+    content:'';
+    width:80%;
+    height:2px;
+    background: red;
+}
+.tab .active{
+    font-weight: bold;
+    font-size:18px;
+    padding-bottom:5px;
+    border-bottom: 2px solid #8FD48C;
+}
+.title{
+    margin:10px 0 30px;
+    font-weight: bold;
+    font-size:18px;
+}
+.left{
+    padding-right:18px;
+    font-size:16px;
+}
+li{
+    padding-top:10px;
+    padding-bottom:10px;
+    border-bottom: 1px solid #E8E8E8;
+}
+.problem{
+    padding-bottom: 20px;
+}
+
+
+/* .right{
+    width:50%;
+} */
+.right img{
+    width:170px;
+}

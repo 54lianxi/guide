@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="../css/base.css">
+    <title>普通瓷砖</title>
+</head>
+<body>
+ <div id="body">
+     <div class="content">
+            <div class="pro_title row center title">
+                    <div class="circle"></div>
+                    <div>普通墙面示意图</div>
+                    <div class="circle"></div>
+            </div>
+            <div class="row">
+                <img src="../img/wall6.png" style="width:180px;" alt="">
+                <div>
+                    <ul class="comment3">
+                        <li>1.瓷砖面层 </li>
+                        <li>2.水泥砂浆或瓷砖胶结合层 </li>
+                        <li>3.混凝土找平层 </li>
+                        <li>4.地固（界面剂） </li>
+                        <li>5.墙面基层 </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pro_title row center title explain">
+                    <div class="circle"></div>
+                    <div>说明 </div>
+                    <div class="circle"></div>
+                </div>
+                <div class="bot10">1.地面基层坚硬，无空鼓起砂则无需地固。 </div>
+            <div>2.墙面平整高差小则无需找平层。 </div>
+            <div class="pro_title row center title">
+                    <div class="circle"></div>
+                    <div>常见问题</div>
+                    <div class="circle"></div>
+                </div>
+     </div>
+     <pro1 :waterproof="water"><pro1>
+ </div>   
+</body>
+</html>
+<script src="http://www.necta.online/js/vue.min.js"></script>
+<script src="../js/problem.js"></script>
+<script>
+        new Vue({
+            el:'#body',
+            data:{
+               water:true
+            },
+            
+        })
+        </script>
